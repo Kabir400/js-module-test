@@ -238,6 +238,8 @@ rule_btn.addEventListener("click", () => {
 result_btn.addEventListener("click", () => {
   play_box.style.display = "block";
   result_box.style.display = "none";
+  next_btn.style.display = "none";
+  rule_btn.style.right = "28px";
 });
 
 // ....................................................
