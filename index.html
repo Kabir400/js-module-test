@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <script src="./index.js" defer></script>
+    <title>Rock Paper Scissor Game</title>
+  </head>
+  <body>
+    <div class="container">
+      <!-- score container -->
+      <div class="score-container">
+        <div class="score-text">
+          <p>ROCK</p>
+          <p>PAPER</p>
+          <p>SCISSORS</p>
+        </div>
+        <div class="score-boxes">
+          <div class="computer-score-box">
+            <div class="computer-score-title">
+              <p>COMPUTER</p>
+              <p>SCORE</p>
+            </div>
+            <h3 class="computer-score"></h3>
+          </div>
+          <div class="user-score-box">
+            <div class="user-score-title">
+              <p>YOUR</p>
+              <p>SCORE</p>
+            </div>
+            <h3 class="user-score"></h3>
+          </div>
+        </div>
+      </div>
+
+      <!-- play box -->
+      <div class="play-box">
+        <div class="blue-ring play-btn" id="rock">
+          <img src="./assets/rock_icon.png" alt="ROCK" />
+        </div>
+        <img src="./assets/line.png" alt="Line" class="line" />
+        <div class="purple-ring play-btn" id="seassor">
+          <img src="./assets/seassor_icon.png" alt="SCISSORS" />
+        </div>
+        <img src="./assets/line.png" alt="line" class="line-left" />
+        <img src="./assets/line.png" alt="line" class="line-right" />
+        <div class="yellow-ring play-btn" id="paper">
+          <img src="./assets/paper_icon.png" alt="SCISSORS" />
+        </div>
+      </div>
+
+      <!--result-box -->
+
+      <div class="draw-box result-container">
+        <div class="game-element-container">
+          <p class="game-element-title">YOU PICKED</p>
+          <img
+            src="./assets/Wincircle.png"
+            alt="Wincircle"
+            class="wincircle wincircle-you"
+          />
+          <div class="game-element game-element-you">
+            <img
+              src="./assets/rock_icon.png"
+              alt="ROCK"
+              class="element-img-you"
+            />
+          </div>
+        </div>
+
+        <div class="result">
+          <h3 class="result-title">TIE UP</h3>
+          <p class="result-sub-title">AGAINST PC</p>
+          <div class="result-btn">REPLAY</div>
+        </div>
+
+        <div class="game-element-container">
+          <img
+            src="./assets/Wincircle.png"
+            alt="Wincircle"
+            class="wincircle wincircle-pc"
+          />
+          <p class="game-element-title">PC PICKED</p>
+          <div class="game-element game-element-pc">
+            <img
+              src="./assets/rock_icon.png"
+              alt="ROCK"
+              class="element-img-pc"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- game rule -->
+    <div class="game-rule">
+      <img src="./assets/game_rule.png" alt="Game-Rule" class="game-rule-img" />
+      <div class="cross-btn">
+        <img src="./assets/cross.png" alt="Remove" class="cross-img" />
+      </div>
+    </div>
+
+    <!-- rules btn -->
+
+    <div class="rule-btn">RULES</div>
+
+    <!-- next btn -->
+    <div class="next-btn">
+      <a href="./winner.html" style="text-decoration: none"> NEXT </a>
+    </div>
+  </body>
+</html>
