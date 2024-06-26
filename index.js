@@ -74,7 +74,7 @@ const changeDraw = (your_choice) => {
   result_title.textContent = "TIE UP";
   wincircle_pc.style.display = "none";
   wincircle_you.style.display = "none";
-  result_btn.textContent = "TIE UP";
+  result_btn.textContent = "REPLAY";
 
   if (your_choice == "rock") {
     element_img_pc.src = "./assets/rock_icon.png";
